@@ -1,0 +1,49 @@
+.tattooine{background: url(http://nerdist.com/wp-content/uploads/2015/04/tattooine-970x545.jpg);
+  background-size:cover;
+  background-position:center top;
+  /*background-repeat: no-repeat;*/
+  background-attachment:fixed;
+}
+
+.content{
+  text-align:center;
+  position:relative;
+  width: 100%;
+}
+
+#dataBackground{
+  background-color: #d8b6a9;
+  position:relative;
+  margin-top:3em;
+  /*min-height:200px;*/
+  height:100vh;
+
+}
+
+#myData{
+  /*background-color: #d8b6a9;*/
+  position:absolute;
+  /*top:50%;*/
+  height:10em;
+  margin-top:2em;
+  margin-left:1em;
+  margin-right:1em;
+
+}
+
+.inner{
+  min-height:600px;
+  position: relative;
+}
+
+.copy{
+  position:absolute;
+  top:50%;
+  height:10em;
+  margin-top:-5em;
+  width:100%;
+}
+
+.text-center {
+   text-align:center
+}

@@ -1,0 +1,50 @@
+.btn-starwars {
+  color: #FFFF00;
+  background-color: #000000;
+  border-color: #6D6C70;
+  font-family: u001bold;
+}
+
+.btn-starwars:hover,
+.btn-starwars:focus,
+.btn-starwars:active,
+.btn-starwars.active,
+.open .dropdown-toggle.btn-starwars {
+  color: #FFFF00;
+  background-color: #262526;
+  border-color: #6D6C70;
+  font-family: u001bold;
+
+}
+
+.btn-starwars:active,
+.btn-starwars.active,
+.open .dropdown-toggle.btn-starwars {
+  background-image: none;
+}
+
+.btn-starwars.disabled,
+.btn-starwars[disabled],
+fieldset[disabled] .btn-starwars,
+.btn-starwars.disabled:hover,
+.btn-starwars[disabled]:hover,
+fieldset[disabled] .btn-starwars:hover,
+.btn-starwars.disabled:focus,
+.btn-starwars[disabled]:focus,
+fieldset[disabled] .btn-starwars:focus,
+.btn-starwars.disabled:active,
+.btn-starwars[disabled]:active,
+fieldset[disabled] .btn-starwars:active,
+.btn-starwars.disabled.active,
+.btn-starwars[disabled].active,
+fieldset[disabled] .btn-starwars.active {
+  background-color: #000000;
+  border-color: #6D6C70;
+  font-family: u001bold;
+}
+
+.btn-starwars .badge {
+  color: #000000;
+  background-color: #FFFF00;
+  font-family: u001bold;
+}
