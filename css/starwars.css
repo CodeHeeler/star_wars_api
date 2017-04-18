@@ -15,19 +15,22 @@
   background-color: #d8b6a9;
   position:relative;
   margin-top:3em;
-  /*min-height:200px;*/
-  height:100vh;
+  min-height:200px;
+  /*height:100vh;*/
+  /*display:inline-block;*/
 
 }
 
 #myData{
   /*background-color: #d8b6a9;*/
-  position:absolute;
+  /*position:absolute;*/
+  position:relative;
   /*top:50%;*/
-  height:10em;
+  /*height:10em;*/
   margin-top:2em;
   margin-left:1em;
   margin-right:1em;
+  margin-bottom:2em;
 
 }
 
