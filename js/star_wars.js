@@ -28,6 +28,7 @@ function displayMovies(data){
 }
 
 $('#movies').on('click', function(e){
+  $('#myData').empty();
   destination = 'http://swapi.co/api/films/'
   $.ajax({
     url: destination,
@@ -57,6 +58,7 @@ function displayCharacters(data){
 }
 
 $('#characters').on('click', function(e){
+  $('#myData').empty();
   destination = 'http://swapi.co/api/people/'
   $.ajax({
     url: destination,
@@ -86,6 +88,7 @@ function displayVehicles(data){
 }
 
 $('#vehicles').on('click', function(e){
+  $('#myData').empty();
   destination = 'http://swapi.co/api/vehicles/'
   $.ajax({
     url: destination,
