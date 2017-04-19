@@ -4,7 +4,7 @@ function getPageMovies(data){
     let title = data['results'][i]['title'];
     let episode = JSON.stringify(data['results'][i]['episode_id']);
     let date = data['results'][i]['release_date'];
-    films = films + "Title: " + title + " (" + date + ") - Episode " + episode + "</br>";
+    films = films + "<li>" + title + " (" + date + ") - Episode " + episode + "</li></br>";
   }
   return films;
 }
@@ -77,7 +77,7 @@ function getPageCharacters(data){
   for (var i = 0; i < data['results'].length; i++){
     let name = data['results'][i]['name'];
     let url = data['results'][i]['url'];
-    people = people + "<li onclick='moreCharacterDetails(\"" + url + "\")'>" + name + "</li></br>";
+    people = people + "<li>" + name + "    <button type='button' class='btn btn-starwars btn-sm' onclick='moreCharacterDetails(\"" + url + "\")'>Details</button></li></br></br>";
   }
   return people;
 }
@@ -149,7 +149,7 @@ function getPageVehicles(data){
   for (var i = 0; i < data['results'].length; i++){
     let name = data['results'][i]['name'];
     let url = data['results'][i]['url'];
-    transports = transports + "<li onclick='moreVehicleDetails(\"" + url + "\")'>" + name + "</li></br>";
+    transports = transports + "<li>" + name + "    <button type='button' class='btn btn-starwars btn-sm' onclick='moreCharacterDetails(\"" + url + "\")'>Details</button></li></br></br>";
   }
   return transports;
 }
@@ -179,51 +179,4 @@ $('#vehicles').on('click', function(e){
 //wishlist:
 //--refactor repeated code
 //--add more breadth and depth to options for user
-
-//-------------------------
-// //refactoring to use the callbacks but save these just in case:
-//-------------------------
-// $('#movies').on('click', function(e){
-//   destination = 'http://swapi.co/api/films/'
-//   $.ajax({
-//     url: destination,
-//     success:function(data){
-//       let films = "";
-//       for (var i = 0; i < data['results'].length; i++){
-//         let title = data['results'][i]['title'];
-//         let episode = JSON.stringify(data['results'][i]['episode_id']);
-//         let date = data['results'][i]['release_date'];
-//         films = films + "Title: " + title + " (" + date + ") - Episode " + episode + "</br>";
-//       }
-//       $('#myData').html(films);
-//     },
-//   });
-// })
-//
-// $('#characters').on('click', function(e){
-//   $.ajax({
-//     url: 'http://swapi.co/api/people/',
-//     success:function(data){
-//       let people = ""
-//       for (var i = 0; i < data['results'].length; i++){
-//         let name = data['results'][i]['name'];
-//         people = people + name + "</br>";
-//       }
-//       $('#myData').html(people);
-//     },
-//   });
-// })
-//
-// $('#vehicles').on('click', function(e){
-//   $.ajax({
-//     url: 'http://swapi.co/api/vehicles/',
-//     success:function(data){
-//       let transports = ""
-//       for (var i = 0; i < data['results'].length; i++){
-//         let name = data['results'][i]['name'];
-//         transports = transports + name + "</br>";
-//       }
-//       $('#myData').html(transports);
-//     },
-//   });
-// })
+//--either abort current ajax call when a new one is made, or show/hide toggle
